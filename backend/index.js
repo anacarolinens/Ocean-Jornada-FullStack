@@ -27,9 +27,9 @@ const list = [
         pontos: 95, 
     },
 ];
-//Endpoint READ ALL - [get] /pontuacoes
+//Endpoint READ ALL - [GET] /pontuacoes
 app.get("/pontuacoes", function (req, res){
-    res.send("Ler todas as pontuações");
+    res.send(list);
 });
 
 //Endpoint CREATE - 
