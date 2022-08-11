@@ -8,8 +8,30 @@ app.get("/", function(req, res){
 app.get("/oi", function(req, res){
     res.send("Olá, mundo!")
 })
+//Criar a lista com as pontuações
 
-app.listen(3000, () =>
-    console.log("Servidor rodando em https://3000-anacaroline-oceanjornad-ev0lhfps24a.ws-us59.gitpod.io/")
-    
-);
+const list = [
+    {
+        id: 1, 
+        nome: "Ana",
+        pontos: 90, 
+    },
+    {
+        id: 2, 
+        nome: "Carol",
+        pontos: 91, 
+    },
+    {
+        id: 3 , 
+        nome: "Lia",
+        pontos: 95, 
+    },
+];
+//Endpoint READ ALL - [get] /pontuacoes
+app.get("/pontuacoes", function (req, res){
+    res.send("Ler todas as pontuações");
+});
+
+//Endpoint CREATE - 
+
+app.listen(3000);
