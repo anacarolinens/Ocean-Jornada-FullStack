@@ -1,0 +1,9 @@
+{
+    "name": "ocean-jornada-fullstack-ana",
+    "version": "1.0.0",
+    "scripts": {
+        "postinstall": "npm install --prefix backend"
+    }
+
+
+}
