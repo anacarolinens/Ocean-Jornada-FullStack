@@ -1,16 +1,14 @@
-require("dotenv").config();
-
 const express = require("express");
 const { MongoClient } = require("mongodb");
 
 const dbHost = process.env.DB_HOST;
-const dbName= process.env.DB_NAME;
+//const dbName= process.env.DB_NAME;
 const dbPassword = process.env.DB_PASSWORD;
 const dbUser = process.env.DB_USER;
 
 //const url = "mongodb://localhost:27017";
-const url = "mongodb+srv://${dbUser}:${dbPassword}@${dbHost}";
-//const dbName = "jornada-fullstack-agosto-22-ana";
+const url = "mongodb+srv://admin:Rex4DNQmQqQMHKcW@cluster0.u6tjjkj.mongodb.net";
+const dbName = "jornada-fullstack-agosto-22-ana";
 
 // Declaração da função main()
 async function main() {
